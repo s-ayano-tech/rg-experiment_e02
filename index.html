@@ -1127,7 +1127,8 @@
         type: jsPsychSurveyHtmlForm,
         on_start: ()=> { document.getElementById('trial-counter').style.display = 'none'; document.getElementById('score-board').style.display = 'none'; },
         html: function() {
-            let speech_text = "Fを押せば<br>+80枚";
+            let speech_text_inaccurate = "Fを押せば<br>+80枚";
+            let speech_text_accurate = "Fを押せば<br>+20枚";
             return `
             <div class="instruction-wrap" style="text-align:center; padding: 15px; margin: 10px auto; max-width: 650px;">
                 <h3 style="margin-top: 0; margin-bottom: 15px; font-size: 16px;">今後、それぞれの人物のアドバイスにどの程度従うと思いますか？</h3>
